@@ -33,7 +33,8 @@ The website has 3 main sections:
 - VScode (code editor)
 - Google Chrome (testing)
 - GitHub (hosting)
-
+  
+## CSS Concepts Used
 - CSS Variables for color scheme
 - Flexbox for header and skills layout
 - Hover effects on navigation and button
