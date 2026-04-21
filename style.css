@@ -20,6 +20,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 header h1 {
@@ -92,15 +94,18 @@ textarea {
     height: 120px;
 }
 
-button {
+/* Submit button */
+button[type="submit"] {
     background-color: #1a1a2e;
     color: white;
     padding: 12px;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
+    width: 100%;
 }
 
-button:hover {
+button[type="submit"]:hover {
     background-color: #00d4ff;
     color: #1a1a2e;
 }
@@ -112,6 +117,63 @@ footer {
     text-align: center;
     padding: 15px;
     margin-top: 30px;
+}
+
+/* Dark mode button */
+#darkBtn {
+    background-color: #00d4ff;
+    color: #1a1a2e;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#darkBtn:hover {
+    background-color: white;
+}
+
+/* About toggle button */
+#aboutBtn {
+    margin-top: 10px;
+    background-color: #1a1a2e;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+}
+
+#aboutBtn:hover {
+    background-color: #00d4ff;
+    color: #1a1a2e;
+}
+
+/* Dark mode styles */
+.dark-mode {
+    background-color: #1a1a2e;
+    color: white;
+}
+
+.dark-mode section {
+    background-color: #16213e;
+    color: white;
+}
+
+.dark-mode section h2 {
+    color: #00d4ff;
+}
+
+.dark-mode input,
+.dark-mode textarea {
+    background-color: #333;
+    color: white;
+    border: 1px solid #555;
+}
+
+.dark-mode footer {
+    background-color: #0a0a1a;
 }
 
 /* Responsive mobile */
