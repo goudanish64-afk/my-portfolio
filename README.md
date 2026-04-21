@@ -33,3 +33,15 @@ The website has 3 main sections:
 - VScode (code editor)
 - Google Chrome (testing)
 - GitHub (hosting)
+
+- CSS Variables for color scheme
+- Flexbox for header and skills layout
+- Hover effects on navigation and button
+- Responsive design with media queries
+- Box model: margin, padding, border
+- CSS selectors: element, class, ID
+
+## Color Scheme
+- Primary: #1a1a2e (dark blue)
+- Accent: #00d4ff (cyan)
+- Background: #f4f4f4 (light grey)
