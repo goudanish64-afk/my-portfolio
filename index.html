@@ -8,6 +8,9 @@
 
     <header>
         <h1>Anish Goud</h1>
+        <button onclick="toggleDarkMode()" id="darkBtn">
+            Dark Mode
+        </button>
         <nav>
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
@@ -18,10 +21,16 @@
     <main>
         <section id="about">
             <h2>About Me</h2>
-            <img src="image/profile.jpg" alt="Profile picture of Anish Goud">
-            <p>Hi! My name is Anish Goud. I am a beginner learning web development.I am passionate 
-about technology and enjoy exploring how websites are 
-built. </p>
+            <img src="images/profile.jpg" 
+            alt="Profile picture of Anish Goud">
+            <p>Hi! My name is Anish Goud. I am a 
+            beginner learning web development. I am 
+            passionate about technology and enjoy 
+            exploring how websites are built.</p>
+            <button onclick="toggleAbout()" 
+            id="aboutBtn">
+                Hide About Me
+            </button>
         </section>
 
         <section id="skills">
@@ -35,10 +44,27 @@ built. </p>
 
         <section id="contact">
             <h2>Contact Me</h2>
-            <form>
-                <input type="text" placeholder="Anish Goud"><br><br>
-                <input type="email" placeholder="goudanish64@gmail.com"><br><br>
-                <textarea placeholder="Your Message"></textarea><br><br>
+            <form onsubmit="return validateForm(event)">
+                <input 
+                    type="text" 
+                    id="name"
+                    placeholder="Your Name">
+                <br><br>
+                <input 
+                    type="email" 
+                    id="email"
+                    placeholder="Your Email">
+                <br><br>
+                <textarea 
+                    id="message" 
+                    placeholder="Your Message">
+                </textarea>
+                <br><br>
+                <div id="errorMsg" 
+                style="color:red"></div>
+                <div id="successMsg" 
+                style="color:green"></div>
+                <br>
                 <button type="submit">Send</button>
             </form>
         </section>
@@ -47,6 +73,8 @@ built. </p>
     <footer>
         <p>2026 Anish Goud</p>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
