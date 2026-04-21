@@ -46,3 +46,11 @@ The website has 3 main sections:
 - Primary: #1a1a2e (dark blue)
 - Accent: #00d4ff (cyan)
 - Background: #f4f4f4 (light grey)
+
+## JavaScript Features
+- Form validation with error messages
+- Dark/Light mode toggle
+- Show/Hide about me section
+- DOM manipulation to update content
+- Event listeners on buttons and form
+- Reusable functions for each feature
